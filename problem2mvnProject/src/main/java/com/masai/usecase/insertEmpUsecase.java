@@ -29,7 +29,7 @@ public class insertEmpUsecase {
 		
 		EmployeeDao edao = new EmployeeDaoImpl();
 		
-		edao.insertEmp(name, marks, new Address(state, city, pincode));
+//		edao.insertEmp(name, marks, new Address(state, city, pincode));
 		
 		
 	}
