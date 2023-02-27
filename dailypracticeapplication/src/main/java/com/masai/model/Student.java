@@ -1,27 +1,32 @@
 package com.masai.model;
 
+import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GeneratorType;
 
 @Entity
-@Table(name = "myStudent")
+@Table(name = "student")
 public class Student {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	
+	@Column(name = "student_id")
 	private Integer id;
 	private String name;
 	private Integer marks;
 	
-	
+//	@Embedded
 	private Address addr;
+	
+	@OneToOne
+	private Course course;
 
 	public Student(Integer id, String name, Integer marks, Address addr) {
 		super();
@@ -34,6 +39,17 @@ public class Student {
 	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+	
+	public Course getCourse() {
+		return course;
+	}
+
+	public void setCourse(Course course) {
+		this.course = course;
 	}
 
 	public Integer getId() {
