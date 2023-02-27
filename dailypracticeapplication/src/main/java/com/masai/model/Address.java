@@ -1,5 +1,9 @@
 package com.masai.model;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+
+@Embeddable
 public class Address {
 	
 	private String state;
