@@ -10,18 +10,16 @@ import javax.persistence.OneToOne;
 public class Course {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	private String courseName;
 	
-	@OneToOne
-	private Student student;
+	
+	
 	
 	public Course() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
 
 
 	public Course(Integer id, String courseName) {
@@ -31,11 +29,9 @@ public class Course {
 	}
 
 
-
 	public Integer getId() {
 		return id;
 	}
-
 
 
 	public void setId(Integer id) {
@@ -43,16 +39,17 @@ public class Course {
 	}
 
 
-
 	public String getCourseName() {
 		return courseName;
 	}
 
 
-
 	public void setCourseName(String courseName) {
 		this.courseName = courseName;
 	}
+	
+
+	
 	
 	
 

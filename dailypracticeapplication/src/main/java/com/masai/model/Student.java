@@ -6,13 +6,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GeneratorType;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
-@Table(name = "student")
+//@Table(name = "student")
 public class Student {
 	
 	@Id
@@ -25,7 +28,9 @@ public class Student {
 //	@Embedded
 	private Address addr;
 	
-	@OneToOne
+	@JoinColumn(name = "c_id")
+	@OneToOne(mappedBy = "student")
+	@JsonIgnore
 	private Course course;
 
 	public Student(Integer id, String name, Integer marks, Address addr) {
