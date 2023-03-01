@@ -13,6 +13,8 @@ public class Course {
 	private Integer id;
 	private String courseName;
 	
+	@OneToOne
+	private Student student;
 	
 	
 	
@@ -26,6 +28,17 @@ public class Course {
 		super();
 		this.id = id;
 		this.courseName = courseName;
+	}
+
+	
+
+	public Student getStudent() {
+		return student;
+	}
+
+
+	public void setStudent(Student student) {
+		this.student = student;
 	}
 
 
