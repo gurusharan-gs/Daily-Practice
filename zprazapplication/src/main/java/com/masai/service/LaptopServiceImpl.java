@@ -20,14 +20,16 @@ public class LaptopServiceImpl implements LaptopService{
 	@Override
 	public Laptop creatLaptop(Laptop laptop, Integer id) {
 		
-		Student student = studentRepo.findById(id).get();
-		
-		laptop.setStudent(student);
-		student.setLaptop(laptop);
-
-		
-		
-		return studentRepo.save(student).getLaptop();
+//		Student student = studentRepo.findById(id).get();
+//		
+//		laptop.setStudent(student);
+//		student.setLaptop(laptop);
+//
+//		
+//		
+//		return studentRepo.save(student).getLaptop();
+//		
+		return null;
 		
 		
 		

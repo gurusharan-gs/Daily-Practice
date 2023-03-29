@@ -19,11 +19,12 @@ public class CourseServiceImpl implements CourseService {
 	@Override
 	public Course addCourse(Course course) {
 
-		Student students = course.getStudent();
-
-		for (Student student : students) {
-			student.getCourse().add(course);
-		}
-		return couresDao.save(course);
+//		Student students = course.getStudent();
+//
+//		for (Student student : students) {
+//			student.getCourse().add(course);
+//		}
+//		return couresDao.save(course);
+		return null;
 	}
 }
