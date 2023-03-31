@@ -1,5 +1,6 @@
 package com.masai.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,10 +42,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 		throw new EmployeeExcepion("employee id not found");
 	}
 	
-//	if (opt.isPresent()) {
-//		Student uStudent = studentDao.save(student);
-//		return uStudent;
-//	}
 
 	@Override
 	public Employee updateEmp(Employee employee) {
@@ -54,6 +51,16 @@ public class EmployeeServiceImpl implements EmployeeService {
 			return update;
 		}
 		throw new EmployeeExcepion("employee not found");
+	}
+
+	@Override
+	public List<Employee> getAll() {
+		List<Employee> empList = employeeDao.findAll();
+		
+		if (empList.isEmpty()) {
+			throw new EmployeeExcepion("not found");
+		}
+		return empList;
 	}
 
 }
