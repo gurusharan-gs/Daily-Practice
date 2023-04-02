@@ -63,4 +63,13 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return empList;
 	}
 
+	@Override
+	public Employee getByNameEmp(String name) {
+		String emp = employeeDao.findByName(name);
+		
+		if (emp.isEmpty()) {
+			
+		}
+	}
+
 }

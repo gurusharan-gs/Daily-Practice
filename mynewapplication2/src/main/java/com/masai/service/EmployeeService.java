@@ -18,6 +18,8 @@ public interface EmployeeService {
 	
 	public List<Employee> getAll();
 	
+	public Employee getByNameEmp(String name);
+	
 	
 
 }

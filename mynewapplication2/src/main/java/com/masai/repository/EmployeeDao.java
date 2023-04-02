@@ -8,4 +8,6 @@ import com.masai.model.Employee;
 @Repository
 public interface EmployeeDao extends JpaRepository<Employee, Integer>{
 
+	public String findByName(String name);
+
 }
