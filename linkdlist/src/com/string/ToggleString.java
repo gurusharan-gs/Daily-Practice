@@ -15,11 +15,15 @@ public class ToggleString {
 			boolean flag = true;
 
 			int ch = str.charAt(i);
+			
+			if (ch == ' ') continue;
+			
 			int asci = (int) ch;
-
+			
 			if (asci >= 97) {
 				flag = false;
 			}
+			
 			if (flag == true) {
 				asci += 32;
 				char dh = (char) asci;
