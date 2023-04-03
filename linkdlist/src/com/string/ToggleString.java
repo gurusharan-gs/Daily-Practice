@@ -8,7 +8,8 @@ public class ToggleString {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		StringBuilder str = new StringBuilder("GurUShaRaN");
+		String s = "GurUSHaraN";
+		StringBuilder str = new StringBuilder(s);
 		System.out.println(str);
 		for (int i = 0; i < str.length(); i++) {
 
