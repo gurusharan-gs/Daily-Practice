@@ -44,13 +44,27 @@ public class EmployeeServiceImpl implements EmployeeService {
 	
 
 	@Override
-	public Employee updateEmp(Employee employee) {
-		Optional<Employee> opt = employeeDao.findById(employee.getId());
+	public Employee updateEmp(Integer id, Employee employee) {
+		Optional<Employee> opt = employeeDao.findById(id);
+		
 		if (opt.isPresent()) {
-			Employee update = employeeDao.save(employee);
-			return update;
+			
+			Employee upEmp = opt.get();
+			
+			upEmp.setName(employee.getName());
+			upEmp.setRole(employee.getRole());
+			upEmp.setSalary(employee.getSalary());
+			
+			return employeeDao.save(upEmp);
+		}else {
+			throw new EmployeeExcepion("employee not found");
 		}
-		throw new EmployeeExcepion("employee not found");
+		
+//		if (opt.isPresent()) {
+//			Employee update = employeeDao.save(employee);
+//			return update;
+//		}
+//		throw new EmployeeExcepion("employee not found");
 	}
 
 	@Override
@@ -65,11 +79,17 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public Employee getByNameEmp(String name) {
-		String emp = employeeDao.findByName(name);
-		
-		if (emp.isEmpty()) {
-			
-		}
+		// TODO Auto-generated method stub
+		return null;
 	}
+
+//	@Override
+//	public Employee getByNameEmp(String name) {
+//		String emp = employeeDao.findByName(name);
+//		
+//		if (emp.isEmpty()) {
+//			
+//		}
+//	}
 
 }

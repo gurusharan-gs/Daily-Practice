@@ -11,6 +11,6 @@ public interface EmployeeService {
 	
 //	public Employee getByIdEmp(Integer id)throws EmployeeExcepion;
 	
-	public Employee updateEmp(Employee employee);
+	public Employee updateEmp(Integer id, Employee employee);
 
 }

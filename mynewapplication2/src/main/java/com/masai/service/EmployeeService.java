@@ -14,7 +14,7 @@ public interface EmployeeService {
 	
 	public Employee getByIdEmp(Integer id);
 	
-	public Employee updateEmp(Employee employee);
+	public Employee updateEmp(Integer id, Employee employee);
 	
 	public List<Employee> getAll();
 	
