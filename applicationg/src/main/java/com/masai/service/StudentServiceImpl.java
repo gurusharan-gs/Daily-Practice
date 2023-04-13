@@ -72,6 +72,15 @@ public class StudentServiceImpl implements StudentService {
 		}
 		return allStudent;
 	}
+
+	@Override
+	public Student findById(Integer roll) {
+		Optional<Student> opt = studenDao.findById(roll);
+		if (opt.isPresent()) {
+			return opt.get();
+		}
+		throw new IllegalArgumentException("not fond roll no "+roll);
+	}
 	
 	
 
