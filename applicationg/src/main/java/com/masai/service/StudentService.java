@@ -17,4 +17,6 @@ public interface StudentService {
 	public Student findByNameStudend(String name);
 	
 	public List<Student> getAllStudent();
+	
+	public Student findById(Integer roll);
 }
