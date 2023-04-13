@@ -53,4 +53,10 @@ public class StudentController {
 		List<Student> all = studentService.getAllStudent();
 		return new ResponseEntity<List<Student>>(all,HttpStatus.OK);
 	}
+	
+	@GetMapping("/student/{id}")
+	public ResponseEntity<Student> getByIdHandel(@PathVariable("id") Integer roll) {
+		Student studentId = studentService.findById(roll);
+		return new ResponseEntity<Student>(studentId, HttpStatus.OK);
+	}
 }
