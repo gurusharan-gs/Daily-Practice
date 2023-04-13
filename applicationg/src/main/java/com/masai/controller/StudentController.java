@@ -54,7 +54,7 @@ public class StudentController {
 		return new ResponseEntity<List<Student>>(all,HttpStatus.OK);
 	}
 	
-	@GetMapping("/student/{id}")
+	@GetMapping("/student/get/{id}")
 	public ResponseEntity<Student> getByIdHandel(@PathVariable("id") Integer roll) {
 		Student studentId = studentService.findById(roll);
 		return new ResponseEntity<Student>(studentId, HttpStatus.OK);
