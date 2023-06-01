@@ -6,23 +6,42 @@ public class IntersectionofTwoLinked {
 	
 	 public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 		 
+		 /**
+		  * assigning temporary varbale for don't 
+		    changing both head values.
+		  */
 		 ListNode tempA = headA;
 		 ListNode tempB = headB;
 		 
+		 /**
+		  * hera taking lengthA
+		  */
 		 int lengthA = 0;
 		 while(tempA != null) {
 			 lengthA++;
 			 tempA = tempA.next;
 		 }
 		 
+		 /**
+		  * hera taking lengthB
+		  */
 		 int lengthB = 0;
 		 while(tempB != null) {
 			 lengthB++;
 			 tempB = tempB.next;
 		 }
+		 
+		 /**
+		  * assigning tempA and tempB value 
+		  * again headA and headB
+		  */
 		 tempA = headA;
 		 tempB = headB;
 		 
+		 /**
+		  * we are chacking greater length 
+		  * for here 
+		  */
 		 if(lengthA > lengthB) {
 			 int steps = lengthA - lengthB;
 			 for(int i=1; i<=steps; i++) {
@@ -35,6 +54,10 @@ public class IntersectionofTwoLinked {
 			 }
 		 }
 		 
+		 /**
+		  * here moving both value together 
+		  * and we get our answer just return that value
+		  */
 		 while(tempA != tempB) {
 			 tempA = tempA.next;
 			 tempB = tempB.next;

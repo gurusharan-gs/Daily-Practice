@@ -78,7 +78,7 @@ public class NthNodeFromEnd {
 	         head = head.next;
 	         return head;
 	     }
-	 
+	
 	    while(fast.next != null){
 	        slow = slow.next;
 	        fast = fast.next;
