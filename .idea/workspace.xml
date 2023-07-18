@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffa47a3c-2115-4db5-97af-71cfb11629ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/springbootApplication2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springbootApplication2/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa_pw_dsa_qsn/src/hashMapProblems/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Daily-Practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Daily-Practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,9 +33,32 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/gurusharan/Desktop/nn/Daily-Practice"
+    "last_opened_file_path": "C:/Users/gurusharan/Desktop/nn/Daily-Practice",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aa_pw_dsa_qsn.src.hashMapProblems.Main" />
+      <module name="Daily-Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aa_pw_dsa_qsn.src.hashMapProblems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
